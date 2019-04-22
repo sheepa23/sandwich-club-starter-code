@@ -47,7 +47,7 @@ public class JsonUtils {
             String image = baseJson.getString("image");
             // fetch JSONArray named ingredients within name object
             JSONArray ingredientsArray = baseJson.getJSONArray("ingredients");
-            // looping through All ingrediets
+            // looping through All ingredients
             List<String> ingredientsStrings = new ArrayList<>();
             for (int i = 0; i < ingredientsArray.length(); i++) {
                 ingredientsStrings.add(ingredientsArray.getString(i));
